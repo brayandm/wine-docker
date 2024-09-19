@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker run -v /:/host wine32:latest bash -c "WINEPREFIX=/host$(pwd)/winefiles wine /host$(pwd)/$1"
+docker run --user $(id -u):$(id -g) -v /:/host wine32:latest bash -c "WINEPREFIX='/host$(pwd)/wine32files' wine '/host$(pwd)/$1'"
