@@ -5,3 +5,5 @@ RUN dpkg --add-architecture i386
 RUN apt update
 
 RUN apt install wine32 -y
+
+RUN apt install pulseaudio -y
