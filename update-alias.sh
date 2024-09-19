@@ -2,10 +2,10 @@
 
 CONFIG_FILE="$HOME/.bashrc"
 
-ALIAS_NAME_32="wine32"
+ALIAS_NAME_32="xwine32"
 ALIAS_COMMAND_32="alias $ALIAS_NAME_32='bash $(pwd)/wine32.sh'"
 
-ALIAS_NAME_64="wine64"
+ALIAS_NAME_64="xwine64"
 ALIAS_COMMAND_64="alias $ALIAS_NAME_64='bash $(pwd)/wine64.sh'"
 
 update_alias() {
