@@ -8,6 +8,6 @@ docker run \
     -e DISPLAY=$DISPLAY \
     -v /:/host wine64:latest bash \
     -c "useradd -u $(id -u) -g root -m $(whoami) && \
-        chown $(id -u):$(id -g) '/host' && \
+        chown $(id -u):$(id -g) '/host/home/brayand' && \
         chown -R $(id -u):$(id -g) /run/user/$(id -u) && \
         su $(whoami) -c \"WINEPREFIX='/host$(pwd)/wine64files' wine64 '/host$(pwd)/$1'\""
